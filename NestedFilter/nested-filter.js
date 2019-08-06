@@ -1,4 +1,4 @@
-configurationURL = "http://localhost:8765/NestedFilter/configure.html"
+configurationURL = "https://tomchaplin.github.io/tableau-nested-filter-production/NestedFilter/configure.html"
 options = {};
 inputSelection = [];
 
