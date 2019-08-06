@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Hello Extensions</title>`
+
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+     <!-- Tableau Extensions API Library  -->
+     <!-- library is in the /lib directory -->
+     <script src="../../lib/tableau.extensions.1.latest.js"></script>
+
+     <!-- Your JavaScript code that uses the Extensions API goes here -->
+     <script src="./configure.js"></script>
+     </head>
+     <body>
+       <div class="container">
+		   <h1> Hello </h1>
+		   <p id="output"></p>
+		   <form id="configurationForm">
+			   <div class="form-group">
+				   <label for="config_linkingSourceName">Linking Data Source</label>
+				   <input type="text" class="form-control" id="config_linkingSourceName" value="">
+			   </div>
+			   <div class="form-group">
+				   <label for="config_inputColumn">Input Column</label>
+				   <input type="text" class="form-control" id="config_inputColumn" value="">
+			   </div>
+			   <div class="form-group">
+				   <label for="config_outputColumn">Output Column</label>
+				   <input type="text" class="form-control" id="config_outputColumn" value="">
+			   </div>
+			   <div class="form-group">
+				   <label for="config_targetSheetName">Target Worksheet</label>
+				   <input type="text" class="form-control" id="config_targetSheetName" value="">
+			   </div>
+			   <div class="form-group">
+				   <label for="config_targetColumn">Target Column</label>
+				   <input type="text" class="form-control" id="config_targetColumn" value="">
+			   </div>
+			   <div class="form-group">
+				   <label for="config_filterTitle">Filter Title</label>
+				   <input type="text" class="form-control" id="config_filterTitle" value="">
+			   </div>
+		   </form>
+		   <button id="close_button">Save configuration</button>
+       </div>
+     </body>
+ </html>

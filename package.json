@@ -4,6 +4,7 @@
   "description": "Sample code and documentation for the Tableau Extensions API.",
   "scripts": {
     "start": "node node_modules/http-server/bin/http-server -p 8765",
+    "dev": "nodemon node_modules/http-server/bin/http-server -p 8765",
     "lint": "semistandard"
   },
   "repository": {
@@ -13,9 +14,11 @@
   "author": "tableau",
   "license": "MIT",
   "dependencies": {
-    "http-server": "^0.9.0"
+    "@tableau/tableau-ui": "^2.2.1",
+    "http-server": "^0.11.1"
   },
   "devDependencies": {
+    "nodemon": "^1.19.1",
     "semistandard": "^11.0.0"
   },
   "semistandard": {
