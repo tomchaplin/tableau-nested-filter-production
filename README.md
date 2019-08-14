@@ -1,6 +1,6 @@
 # Notice
 
-The Tableau Extension API is not my work. All files under `NestedFilter/` is my work which is owned by Imperium Risk. The latter, is NOT provided under the MIT License.
+The Tableau Extension API is not my work. All files under `NestedFilter/` is my work which is owned by Imperium Risk. The latter is NOT provided under the MIT License.
 
 # Tableau Extensions API
 [![Tableau Supported](https://img.shields.io/badge/Support%20Level-Tableau%20Supported-53bd92.svg)](https://www.tableau.com/support-levels-it-and-developer-tools)
