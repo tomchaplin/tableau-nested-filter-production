@@ -3,7 +3,11 @@ function closeDialog(){
 	for(var key in currentOptions) {
 		field = document.getElementById(`config_${key}`)
 		if(field) {
-			currentOptions[key] = field.value;
+			if(key=="targets") {
+				currentOptions[key] = JSON.parse(field.value);
+			} else {
+				currentOptions[key] = field.value;
+			}
 		}
 	}
 	tableau.extensions.settings.set("options",JSON.stringify(currentOptions));
@@ -25,8 +29,9 @@ $(document).ready(function() {
 				linkingSourceName: "xhorsederby (test-schema)",
 				inputColumn:  "Derby Title Link",
 				outputColumn:  "Horse Name Link",
-				targetSheetName: "Sheet 1",
-				targetColumn:  "Horse Name",
+				targets: [
+					{sheetName: "Sheet 1", columnName: "Horse Name"}
+				],
 				filterTitle: "Derby Title",
 				allowNone: true
 			}
@@ -38,7 +43,11 @@ $(document).ready(function() {
 		for(var key in currentOptions) {
 			field = document.getElementById(`config_${key}`)
 			if(field) {
-				field.value = currentOptions[key];
+				if(key=="targets") {
+					field.innerHTML = JSON.stringify(currentOptions[key]);
+				} else {
+					field.value = currentOptions[key];
+				}
 			}
 		}
 
