@@ -1,3 +1,4 @@
+//configurationURL = "http://localhost:8765/NestedFilter/configure.html"
 configurationURL = "https://tomchaplin.github.io/tableau-nested-filter-production/NestedFilter/configure.html"
 options = {};
 inputSelection = [];
@@ -136,6 +137,12 @@ $(document).ready(function() {
 		// Activate bootstrap multiselect with onChange handler
 		inputSelector = $("#inputSelector");
 		inputSelector.multiselect({
+			buttonWidth: '100%;',
+			nonSelectedText: '(None)',
+			allSelectedText: '(All)',
+			numberDisplayed: 1,
+			nSelectedText: '(Multiple Values)',
+			includeSelectedAllOption: true,
 			onChange: function(option, checked, select) {
 				if(option[0].value=="__none") {
 					// Togle the allow none option to correct value
