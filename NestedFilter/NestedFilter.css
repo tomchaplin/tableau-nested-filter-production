@@ -1,11 +1,11 @@
 html, body {
 	font-family: Arial, sans-serif;
-	background-color: #2f324c;
 	color: white;
 }
 
 body{
 	padding: 5px;
+	background-color: #2f324c;
 	border: 1px solid #2381cb;
 }
 
