@@ -47,6 +47,10 @@ ul.multiselect-container.dropdown-menu {
 	background-color: #999;
 }
 
+ul.multiselect-container.dropdown-menu li {
+	width: 85%;
+}
+
 ul.multiselect-container.dropdown-menu li label {
 	padding-left: 25px;
 	color: white;
