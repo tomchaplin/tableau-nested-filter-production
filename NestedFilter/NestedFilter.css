@@ -4,9 +4,7 @@ html, body {
 }
 
 body{
-	padding: 5px;
-	background-color: #2f324c;
-	border: 1px solid #2381cb;
+	background-color: #2f3242;
 }
 
 h3#title_elem {
@@ -45,7 +43,7 @@ ul.multiselect-container.dropdown-menu {
 	font-size: 9pt;
 	border-radius: 0;
 	background-color: #999;
-	min-width: none;
+	min-width: auto;
 }
 
 ul.multiselect-container.dropdown-menu li label {
@@ -62,5 +60,7 @@ ul.multiselect-container.dropdown-menu li.active a {
 }
 
 div.container {
-	padding: 0;
+	padding: 5px;
+	background-color: #2f324c;
+	border: 1px solid #2381cb;
 }
