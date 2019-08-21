@@ -10,7 +10,7 @@ body{
 h3#title_elem {
 	font-size: 9pt;
 	font-weight: bold;
-	margin: 5px 0;
+	margin: 1px 0px -3px 0px;
 }
 
 div.btn-group {
@@ -28,7 +28,7 @@ button.multiselect.dropdown-toggle.btn.btn-default span {
 button.multiselect.dropdown-toggle.btn.btn-default {
 	border-radius: 0;
 	font-size: 9pt;
-	background-color: #999;
+	background-color: #8b92a5;
 	border: 1px solid white;
 	padding: 3px 5px;
 	color: white;
@@ -42,7 +42,7 @@ b.caret {
 ul.multiselect-container.dropdown-menu {
 	font-size: 9pt;
 	border-radius: 0;
-	background-color: #999;
+	background-color: #8b92a5;
 	min-width: auto;
 }
 
@@ -52,15 +52,15 @@ ul.multiselect-container.dropdown-menu li label {
 }
 
 ul.multiselect-container.dropdown-menu li a:hover {
-	background-color: #999;
+	background-color: #8b92a5;
 }
 
 ul.multiselect-container.dropdown-menu li.active a {
-	background-color: #999;
+	background-color: #8b92a5;
 }
 
 div.container {
-	padding: 5px;
+	padding: 3px;
 	background-color: #3d4257;
 	border: 1px solid #2381cb;
 }
